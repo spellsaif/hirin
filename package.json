@@ -1,0 +1,49 @@
+{
+  "name": "hirin",
+  "version": "0.1.0",
+  "description": "Solar-fast, ultra-lightweight, and precise Solana wallet adapter powered by Utsutsu and the Wallet Standard",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "solana",
+    "wallet",
+    "adapter",
+    "wallet-standard",
+    "utsutsu",
+    "react",
+    "state",
+    "lightweight"
+  ],
+  "author": "spellsaif <saif.ali067@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@solana/kit": "^2.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "utsutsu": "^0.1.0"
+  },
+  "dependencies": {
+    "@wallet-standard/base": "^1.0.1",
+    "@wallet-standard/core": "^1.0.3",
+    "@wallet-standard/features": "^1.0.3"
+  },
+  "devDependencies": {
+    "@solana/kit": "^2.0.0",
+    "@types/react": "^18.3.12",
+    "react": "^18.3.1",
+    "typescript": "^5.6.3",
+    "utsutsu": "^0.1.0",
+    "vitest": "^4.1.7"
+  },
+  "sideEffects": false
+}
